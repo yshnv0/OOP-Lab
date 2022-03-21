@@ -55,6 +55,19 @@ public class product {
 		System.out.println("Product name : "+ob3.pname);
 		System.out.println("Product code : "+ob3.price);
 		
+		if((ob1.price<ob2.price) && (ob1.price<ob3.price))
+		{
+			System.out.println("First product have lowest price");
+		}
+		else if((ob2.price<ob1.price) && (ob2.price<ob3.price))
+		{
+			System.out.println("Second product have lowest price");
+		}
+		else
+		{
+			System.out.println("Third product have lowest price");
+		}
+		
 		
 		
 		
