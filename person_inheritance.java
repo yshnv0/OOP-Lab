@@ -38,17 +38,17 @@ class teacher extends employee
 	}
 	void display()
 	{
-		System.out.println("Teacher name : "+this.name);
-		System.out.println("Teacher gender : "+this.gender);
-		System.out.println("Teacher address : "+this.address);
-		System.out.println("Teacher age : "+this.age);
+		System.out.println("Name of the person : "+this.name);
+		System.out.println("Gender : "+this.gender);
+		System.out.println("Address : "+this.address);
+		System.out.println("Age : "+this.age);
 		System.out.println("Employee id : "+this.empid);
 		System.out.println("Company name : "+this.cname);
-		System.out.println("Employee qualification : "+this.quali);
-		System.out.println("Employee salary : "+this.salary);
+		System.out.println("Qualification : "+this.quali);
+		System.out.println("Salary : "+this.salary);
 		System.out.println("Teacher id : "+this.tchrid);
-		System.out.println("Teacher subject : "+this.subject);
-		System.out.println("Teacher department : "+this.dept);
+		System.out.println("Subject : "+this.subject);
+		System.out.println("Department : "+this.dept);
 	}
 }
 public class person_inheritance
@@ -64,38 +64,38 @@ public class person_inheritance
 		teacher obj[]=new teacher[n];
 		for(int i=0;i<n;i++)
 		{
-			System.out.println("Teacher "+(i+1));
-			System.out.println("Enter the teacher id : ");
+			System.out.println("Enter details of Teacher "+(i+1));
+			System.out.println("Enter the employee id : ");
 			empid=s.nextInt();
 			s.nextLine();
-			System.out.println("Enter the teacher name : ");
+			System.out.println("Enter the name of the person : ");
 			name=s.nextLine();
-			System.out.println("Enter the teacher gender : ");
+			System.out.println("Enter the gender : ");
 			gender=s.nextLine();
-			System.out.println("Enter the teacher address : ");
+			System.out.println("Enter the address : ");
 			addr=s.nextLine();
-			System.out.println("Enter the teacher age : ");
+			System.out.println("Enter the age : ");
 			age=s.nextInt();
 			s.nextLine();
-			System.out.println("Enter the teacher name : ");
+			System.out.println("Enter the company name : ");
 			cname=s.nextLine();
-			System.out.println("Enter the teacher qualification : ");
+			System.out.println("Enter qualification : ");
 			qual=s.nextLine();
-			System.out.println("Enter the teacher salary : ");
+			System.out.println("Enter salary : ");
 			salary=s.nextDouble();
 			System.out.println("Enter the teacher id : ");
 			tid=s.nextInt();
 			s.nextLine();
-			System.out.println("Enter the teacher subject : ");
+			System.out.println("Enter subject : ");
 			sub=s.nextLine();
-			System.out.println("Enter the teacher department : ");
+			System.out.println("Enter department : ");
 			dept=s.nextLine();
 			obj[i]=new teacher(name,gender,addr,age,empid,salary,cname,qual,sub,dept,tid);	
 		}
 		System.out.println("-----TEACHER DETAILS-----\n");
 		for(int i=0;i<n;i++)
 		{
-			System.out.println("Teacher "+(i+1));
+			System.out.println("Details of Teacher "+(i+1));
 			obj[i].display();
 		}
 	}
