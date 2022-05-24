@@ -4,7 +4,7 @@ public class object_interface
 	public static void main(String[] args)
 	{
 		Scanner s=new Scanner(System.in);
-		int ch;
+		int ch,x;
 		inter i;
 		circle ob1=new circle();
 		rectangle ob2=new rectangle();
@@ -31,7 +31,7 @@ public class object_interface
 					   
 			}
 			System.out.println("Do you want to continue ? (0/1)");
-			int x=s.nexInt();	
+			x=s.nextInt();	
 		}
 		while(x!=0);
 	}
@@ -49,6 +49,7 @@ class circle implements inter
 		System.out.println("Enter raidus of the circle ");
 		int r=s.nextInt();
 		System.out.print("Area of the circle = "+(3.14*r*r));
+		System.out.println();
 	}
 	public void peri()
 	{
@@ -56,6 +57,7 @@ class circle implements inter
 		System.out.println("Enter raidus of the circle ");
 		int r=s.nextInt();
 		System.out.print("Perimeter of the circle = "+(2*3.14*r));
+		System.out.println();
 	}
 }
 class rectangle implements inter
@@ -68,6 +70,7 @@ class rectangle implements inter
 		System.out.println("Enter the breadth of the rectangle ");
 		int b=s.nextInt();
 		System.out.print("Area of the rectangle = "+(l*b));
+		System.out.println();
 	}
 	public void peri()
 	{
@@ -77,5 +80,6 @@ class rectangle implements inter
 		System.out.println("Enter the breadth of the rectangle ");
 		int b=s.nextInt();
 		System.out.print("Perimeter of the rectangle = "+(2*(l+b)));
+		System.out.println();
 	}
 }
